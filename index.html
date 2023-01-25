@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="p5.min.js" type="text/javascript"></script>
-    <script src="matter.min.js" type="text/javascript"></script>
-    <script defer src="script.js" type="text/javascript"></script>
-    <style type="text/css">
-        html,body{margin: 0;}
-    </style>
-</head>
-<body>
     
-</body>
+    <script  src="middleman.js"></script>
+   
+    <title>Plinko SearchEngine</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="libraries/matter.js" type="text/javascript"></script>
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+  
+  <body>
+    <div class="title">
+      <h1>
+        Plinko Search Engine
+      </h1>
+    </div>
+    <div class="subtitle">
+      the search engine that <strong>almost</strong> never gives you what you want
+
+    </div>
+<div class="container">
+  <form action="https://google.com/search" method="get" class="search-bar" id="Search">
+    <input type="text" placeholder="Hit the first or last bucket!" name="q">
+    <button type="button"><img src="resources/images/search.png" onclick="SubmitSearchMiddleman()" alt=""></button>
+  </form>
+
+</div>
+<div class="canvas" >
+    <script defer src="boundary.js"></script>
+    <script defer src="particle.js"></script>
+    <script defer src="plinko.js"></script>
+    <script  src="sketch.js"></script>
+  </div>
+  </body>
 </html>

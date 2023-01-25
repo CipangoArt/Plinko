@@ -8,7 +8,9 @@ function Particle(x,y,radius)
 
     }
     x+= random(-1,1);
+    
     this.body=Bodies.circle(x,y,radius,options);
+    this.body.label="particle";
     this.radius=radius;
     World.add(world,this.body);
 

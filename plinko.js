@@ -7,6 +7,7 @@ function Plinko(x,y,radius)
         friction:0
     }
     this.body=Bodies.circle(x,y,radius,options);
+    this.body.label="peg";
     this.radius=radius;
     World.add(world,this.body);
 
